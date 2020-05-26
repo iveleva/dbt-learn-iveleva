@@ -19,4 +19,12 @@ models:
         name: customer_id
         tests:
           - not_null
+  - name: jinja_payments
+    description: A pivoted payments table
+    columns:
+      - name: order_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
  
